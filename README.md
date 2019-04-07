@@ -4,7 +4,7 @@ Projects and exercises for [Modern React with Redux](https://www.udemy.com/react
 
 ## Progress
 
-- [ ] Section 1
+- [x] Section 1
 - [ ] Section 2
 - [ ] Section 3
 - [ ] Section 4
