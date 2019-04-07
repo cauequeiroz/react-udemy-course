@@ -29,4 +29,4 @@ Projects and exercises for [Modern React with Redux](https://www.udemy.com/react
 - [ ] Section 23
 - [ ] Section 24
 - [ ] Section 25
-- [ ] Section 26
+- [x] Section 26
