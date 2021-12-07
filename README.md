@@ -1,4 +1,4 @@
-# Modern React with Redux
+# React - The Complete Guide (incl Hooks, React Router, Redux)
 
 Projects and exercises for [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/).
 
