@@ -1,7 +1,10 @@
+import { useState } from "react";
 import ExpenseForm from "./ExpenseForm"
 import './NewExpense.css';
 
 const NewExpense = (props) => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   const createNewExpense = ({title, amount, date}) => {
     const entry = {
       title,
@@ -11,11 +14,16 @@ const NewExpense = (props) => {
     };
 
     props.onNewExpense(entry);
+    closeFormHandler();
   };
+
+  const openFormHandler = () => setIsFormOpen(true);
+  const closeFormHandler = () => setIsFormOpen(false);
 
   return (
     <div className="new-expense">
-      <ExpenseForm onSubmitForm={createNewExpense} />
+      {!isFormOpen && <button onClick={openFormHandler}>Add new expense</button>}
+      {isFormOpen && <ExpenseForm onSubmitForm={createNewExpense} onCancel={closeFormHandler} />}
     </div>
   );
 };
