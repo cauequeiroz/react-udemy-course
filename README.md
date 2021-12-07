@@ -1,13 +1,13 @@
 # Modern React with Redux
 
-Projects and exercises for [Modern React with Redux](https://www.udemy.com/react-redux/).
+Projects and exercises for [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/).
 
 ## Progress
 
 - [x] Section 1
-- [x] Section 2
-- [x] Section 3
-- [x] Section 4
+- [ ] Section 2
+- [ ] Section 3
+- [ ] Section 4
 - [ ] Section 5
 - [ ] Section 6
 - [ ] Section 7
@@ -30,3 +30,7 @@ Projects and exercises for [Modern React with Redux](https://www.udemy.com/react
 - [ ] Section 24
 - [ ] Section 25
 - [ ] Section 26
+- [ ] Section 27
+- [ ] Section 28
+- [ ] Section 29
+- [ ] Section 30
