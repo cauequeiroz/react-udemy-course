@@ -9,8 +9,8 @@ Projects and exercises for [React - The Complete Guide (incl Hooks, React Router
 - [x] Section 3
 - [x] Section 4
 - [x] Section 5
-- [ ] Section 6
-- [ ] Section 7
+- [x] Section 6
+- [x] Section 7
 - [ ] Section 8
 - [ ] Section 9
 - [ ] Section 10
