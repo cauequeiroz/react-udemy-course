@@ -12,7 +12,7 @@ Projects and exercises for [React - The Complete Guide (incl Hooks, React Router
 - [x] Section 6
 - [x] Section 7
 - [ ] Section 8
-- [ ] Section 9
+- [x] Section 9
 - [ ] Section 10
 - [ ] Section 11
 - [ ] Section 12
