@@ -1,15 +1,20 @@
-import "./Chart.css";
 import ChartBar from "./ChartBar";
+import * as S from './Chart.styles';
 
 const Chart = (props) => {
-  const maxValue = Math.max(...props.points.map(point => point.value));
+  const maxValue = Math.max(...props.points.map((point) => point.value));
 
   return (
-    <div className="chart">
+    <S.Wrapper>
       {props.points.map((point) => (
-        <ChartBar key={point.month} label={point.month} value={point.value} maxValue={maxValue} />
+        <ChartBar
+          key={point.month}
+          label={point.month}
+          value={point.value}
+          maxValue={maxValue}
+        />
       ))}
-    </div>
+    </S.Wrapper>
   );
 };
 
