@@ -21,8 +21,8 @@ Projects and exercises for [React - The Complete Guide (incl Hooks, React Router
 - [ ] Section 15
 - [ ] Section 16
 - [ ] Section 17
-- [ ] Section 18
-- [ ] Section 19
+- [x] Section 18
+- [x] Section 19
 - [ ] Section 20
 - [ ] Section 21
 - [ ] Section 22
