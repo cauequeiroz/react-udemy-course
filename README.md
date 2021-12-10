@@ -30,7 +30,7 @@ Projects and exercises for [React - The Complete Guide (incl Hooks, React Router
 - [ ] Section 24
 - [ ] Section 25
 - [ ] Section 26
-- [ ] Section 27
+- [x] Section 27
 - [ ] Section 28
 - [ ] Section 29
 - [ ] Section 30
