@@ -1,7 +1,7 @@
 import { FC, FormEvent, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { addNewTodo } from "../../store";
-import { Form } from "./styles";
+import { Form, Label, Input, Button } from "./styles";
 
 const AddTodo: FC = () => {
   const $input = useRef<HTMLInputElement>(null);
@@ -19,9 +19,9 @@ const AddTodo: FC = () => {
 
   return (
     <Form onSubmit={submitHandler}>
-      <label htmlFor="add-todo">Create new todo:</label>
-      <input type="text" id="add-todo" ref={$input} />
-      <button>Add</button>
+      <Label htmlFor="add-todo">Create new todo:</Label>
+      <Input type="text" id="add-todo" ref={$input} />
+      <Button>Add</Button>
     </Form>
   );
 };
