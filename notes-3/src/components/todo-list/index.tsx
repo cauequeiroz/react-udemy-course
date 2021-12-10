@@ -1,22 +1,16 @@
 import { FC } from "react";
 import { Wrapper } from "./styles";
 import { Todo } from "../todo";
-import * as types from "../../types";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
-type TodoListProps = {
-  items: types.Todo[];
-  onCompleteTodo: (id: string) => void;
-  onRemoveTodo: (id: string) => void;
-};
-
-const TodoList: FC<TodoListProps> = (props) => {
+const TodoList: FC = () => {
+  const items = useSelector((state: RootState) => state.items);
 
   return (
     <Wrapper>
-      {props.items.map((item) => (
+      {items.map((item) => (
         <Todo
-          onClick={(id) => props.onCompleteTodo(id)}
-          onDoubleClick={(id) => props.onRemoveTodo(id)}
           key={item.id}
           id={item.id}
           text={item.text}

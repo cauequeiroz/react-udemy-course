@@ -1,13 +1,16 @@
 import { FC } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 import { Wrapper } from "./styles";
 
-type StatusBarProps = {
-  count: number,
-  completeCount: number
-};
+const StatusBar: FC = () => {
+  const { count, completeCount } = useSelector((state: RootState) => state);
 
-const StatusBar: FC<StatusBarProps> = (props) => {
-  return <Wrapper>{props.count} items. {props.completeCount} completed.</Wrapper>;
+  return (
+    <Wrapper>
+      {count} items. {completeCount} completed.
+    </Wrapper>
+  );
 };
 
 export { StatusBar };

@@ -1,15 +1,20 @@
-import { FC } from 'react';
-import { Wrapper } from "./styles";
+import { FC } from "react";
+import { useDispatch } from "react-redux";
+
+import { completeTodo, removeTodo } from "../../store";
 import * as types from "../../types";
 
-type TodoProps = types.Todo & {
-  onClick: (id: string) => void,
-  onDoubleClick: (id: string) => void
-};
+import { Wrapper } from "./styles";
 
-const Todo:FC<TodoProps> = (props) => {
+const Todo: FC<types.Todo> = (props) => {
+  const dispatch = useDispatch();
+
   return (
-    <Wrapper onClick={() => props.onClick(props.id)} onDoubleClick={() => props.onDoubleClick(props.id)} completed={props.completed}>
+    <Wrapper
+      onClick={() => dispatch(completeTodo(props.id))}
+      onDoubleClick={() => dispatch(removeTodo(props.id))}
+      completed={props.completed}
+    >
       {props.text}
     </Wrapper>
   );

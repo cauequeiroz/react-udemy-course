@@ -1,12 +1,11 @@
-import { FC, FormEvent, useRef } from 'react';
-import { Form } from './styles';
+import { FC, FormEvent, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { addNewTodo } from "../../store";
+import { Form } from "./styles";
 
-type AddTodoProps = {
-  onAddTodo: (text: string) => void
-};
-
-const AddTodo: FC<AddTodoProps> = (props) => {
+const AddTodo: FC = () => {
   const $input = useRef<HTMLInputElement>(null);
+  const dispatch = useDispatch();
 
   const submitHandler = (event: FormEvent) => {
     event.preventDefault();
@@ -14,8 +13,8 @@ const AddTodo: FC<AddTodoProps> = (props) => {
     const enteredText = $input.current!.value;
     if (!enteredText.trim().length) return;
 
-    props.onAddTodo(enteredText);
-    $input.current!.value = '';
+    dispatch(addNewTodo(enteredText));
+    $input.current!.value = "";
   };
 
   return (
